@@ -1,0 +1,274 @@
+@font-face {font-family: "Futura PT Cond Bold";
+	src: url("../css/futura/ca2e12563b2a83645b39e10acc48e0c8.woff2"); /* IE9*/
+}
+@font-face {font-family: "Apercu Light";
+	src: url("../css/acura/42da5dfa84d510b672ede462e7ed8632.woff2"); /* IE9*/
+}
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	overflow-x: hidden;
+	font-family: "Futura PT Cond Bold";
+	background: #dbeafe;
+}
+ul,ol{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+p{
+	font-size: 18px;
+	margin-bottom: 0;
+	font-family: "Apercu Light";
+}
+h1,h2,h3,h4,h5,h6{
+	margin-bottom: 0;
+	line-height: 1;
+}
+a{
+	text-decoration: none;
+}
+/*=====================Login Page================================*/
+.login_page{
+  width: 100%;
+  height: 100vh;
+  position: relative; 
+}
+.login_box{
+	width: 100%;
+	max-width: 600px;
+	margin: auto;
+	/* padding: 20px 0; */
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+
+}
+.singup_page{
+	max-width: 380px;
+	margin: auto;
+}
+.login_main{
+	background: white;
+	border-radius: 5px;
+	padding: 10px 0;
+}
+.login_box h4{
+	color: #1e293b;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.login_top,.login_bottom{
+	padding: 15px 25px;
+}
+.login_top h5{
+	color: #475569;
+	font-weight: 600;
+	font-size: 22px;
+	margin-bottom: 15px;
+}
+.login_top .form-label{
+	font-weight: 500;
+	color: #475569;
+}
+.login_top .form-group{
+	margin-bottom: 15px;
+}
+.forgot{
+	font-weight: 500;
+	font-size: 13px;
+}
+.login_top button{
+	font-weight: 500;
+}
+.login_bottom{
+	border-top: 1px solid #cbd5e1;
+	text-align: center;
+}
+.login_bottom p{
+	color: #94a3b8;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+.login_bottom ul{
+	display: flex;
+	justify-content: space-between;
+}
+.login_bottom button{
+	background: #e2e8f0;
+	color: #475569;
+	font-weight: 500;
+	border: none;
+	padding: 10px 32px;
+	border-radius: 5px;
+}
+.login_bottom button i{
+	margin-right: 5px;
+	font-size: 14px;
+}
+.bottom_content p{
+	color:#475569;
+}
+
+/*dashboard*/
+.dashboard_left{
+	background: white;
+}
+.dashboard_header{
+	background:#a1c8ff;
+	padding: 10px 20px;
+}
+.profile{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.profile ul{
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+.profile_icon{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 50px;
+	background: rgb(255, 0, 106);
+	position: relative;
+}
+.profile_icon span{
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border-radius: 50px;
+	right: 0;
+	bottom: 0;
+	background: rgb(122, 198, 9);
+}
+.profile_icon p{
+	font-weight: 600;
+	font-size: 20px;
+}
+.profile_view i{
+	font-size: 25px;
+	color: #1e293b;
+}
+.search{
+	position: relative;
+}
+.search input{
+	margin-top: 15px;
+	padding-left: 36px;
+}
+.search span{
+	position: absolute;
+	top: 50%;
+	left: 12px;
+	transform: translateY(-50%);
+}
+.tabs{
+	overflow: auto;
+}
+.tabs .nav-link{
+	border-radius: 0;
+}
+.tabs .profile_icon p{
+	color: white;
+}
+.tabs .profile_name h5{
+	color: black;
+}
+.tabs .profile_view p{
+	color: #475569;
+}
+.tabs .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #cbd5e1;
+}
+.dashboard_right {
+	background: white;
+	height: 560px;
+}
+.dashboard_right .profile{
+	background: #cbd5e1;
+	padding: 8px 30px;
+}
+.user_text{
+	width: 100%;
+	padding: 8px 30px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #cbd5e1;
+}
+.user_text form{
+	position: relative;
+}
+.user_text form input{
+   width: 100%;
+}
+.user_text form a{
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+.user_text a img{
+	width: 30px;
+}
+.tab-content{
+	padding: 8px 30px;
+	width: 100%;
+	height: 100%;
+	background: rgb(93, 93, 84);
+	position: relative;
+}
+.send ul{
+	position: absolute;
+	right: 32px;
+    bottom: 57px;
+}
+.send ul li .time{
+	color: white;
+	font-size: 13px;
+	text-align: end;
+}
+.send ul li .time span{
+	padding-right: 5px;
+	font-size: 14px;
+}
+.send ul li .send_message{
+	background: rgb(235, 254, 180);
+	padding: 5px 8px;
+	border-radius: 5px;
+	margin-bottom: 5px;
+}
+.recived ul{
+	position: absolute;
+	left: 32px;
+	bottom: 80px;
+}
+.recived ul li .time{
+	color: white;
+	font-size: 13px;
+}
+.recived ul li .time span{
+	padding-right: 5px;
+	font-size: 14px;
+}
+.recived ul li .send_message{
+	background: #94a3b8;
+	padding:5px 8px;
+	border-radius: 5px;
+	margin-bottom: 5px;
+}
